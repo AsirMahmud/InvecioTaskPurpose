@@ -44,22 +44,12 @@ export default function Product() {
       image:
         "https://images.pexels.com/photos/8128069/pexels-photo-8128069.jpeg?auto=compress&cs=tinysrgb&w=400",
     },
-    {
-      name: "Perfume",
-      image:
-        "https://images.pexels.com/photos/2333857/pexels-photo-2333857.jpeg?auto=compress&cs=tinysrgb&w=400",
-    },
-    {
-      name: "Wallet",
-      image:
-        "https://images.pexels.com/photos/5218037/pexels-photo-5218037.jpeg?auto=compress&cs=tinysrgb&w=400",
-    },
   ];
 
   return (
-    <div className="flex flex-col  ">
+    <div className="flex flex-col md:gap-4   ">
       <Header header="Shop by Department"></Header>
-      <div className="grid lg:grid-cols-5 place-items-center md:grid-cols-3 grid-cols-2">
+      <div className="grid lg:grid-cols-4 place-items-center md:grid-cols-3 gap-y-4 grid-cols-2">
         {productData.map((i) => (
           <BestDeals
             key={i.name}

@@ -116,7 +116,7 @@ export default function MostViewSlider() {
         {products.map((i, index) => (
           <CarouselItem
             key={index}
-            className="pl-2 basis-2/3 md:basis-1/3 lg:basis-1/5"
+            className="pl-2 basis-2/3 md:basis-1/3 lg:basis-1/4"
           >
             <Card imageUrl={i.image} categoryName={i.name}></Card>
           </CarouselItem>

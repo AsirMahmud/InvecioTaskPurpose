@@ -115,7 +115,7 @@ export default function DailyDiscoverCard() {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-2 lg:grid-cols-5 place-items-center ">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 gap-2 lg:grid-cols-4 place-items-center ">
       {products.map((i, index) => (
         <div key={index} className="pl-2 basis-2/3 md:basis-1/3 lg:basis-1/5">
           <Card imageUrl={i.image} categoryName={i.name}></Card>
