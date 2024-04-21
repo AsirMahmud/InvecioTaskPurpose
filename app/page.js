@@ -1,4 +1,6 @@
 import AppleProduct from "@/components/apple/appleProduct";
+import Banner from "@/components/banner/banner";
+import DailyDiscover from "@/components/dailyDiscover/dailydicover";
 import Deal from "@/components/dealOfTheDay/deal";
 import Product from "@/components/department/product";
 import Feature from "@/components/feature/feature";
@@ -18,6 +20,7 @@ import CategoryCard from "@/components/ui/categoryCard";
 import Hero from "@/components/ui/hero";
 import ListCard from "@/components/ui/ListCard";
 import ProductCard from "@/components/ui/productCard";
+import WeeklyVendor from "@/components/weeklyVendors/weeklyVendor";
 import { PiIcon } from "lucide-react";
 
 export default function Home() {
@@ -33,6 +36,9 @@ export default function Home() {
       <ShopCategories></ShopCategories>
       <Viewed></Viewed>
       <TopBrand></TopBrand>
+      <WeeklyVendor></WeeklyVendor>
+      <Banner></Banner>
+      <DailyDiscover></DailyDiscover>
     </div>
   );
 }

@@ -1,12 +1,5 @@
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import Card from "../ui/cardO";
-export default function MostViewSlider() {
+export default function DailyDiscoverCard() {
   const products = [
     {
       name: "Rapoo Ear Phone",
@@ -107,23 +100,27 @@ export default function MostViewSlider() {
       image:
         "https://images.pexels.com/photos/159472/headphones-instagram-video-games-razer-159472.jpeg?auto=compress&cs=tinysrgb&w=300",
     },
+    {
+      name: "Wireless Bluetooth Headset",
+      description: "Enjoy wireless freedom with crystal-clear sound",
+      price: {
+        current: 25,
+        regular: 35,
+        discount: 28.57,
+      },
+      image:
+        "https://images.pexels.com/photos/4397838/pexels-photo-4397838.jpeg?auto=compress&cs=tinysrgb&w=300",
+    },
     // Add more products as needed
   ];
 
   return (
-    <Carousel className="w-full ">
-      <CarouselContent className="-ml-1">
-        {products.map((i, index) => (
-          <CarouselItem
-            key={index}
-            className="pl-2 basis-2/3 md:basis-1/3 lg:basis-1/5"
-          >
-            <Card imageUrl={i.image} categoryName={i.name}></Card>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-2 lg:grid-cols-5 place-items-center ">
+      {products.map((i, index) => (
+        <div key={index} className="pl-2 basis-2/3 md:basis-1/3 lg:basis-1/5">
+          <Card imageUrl={i.image} categoryName={i.name}></Card>
+        </div>
+      ))}
+    </div>
   );
 }

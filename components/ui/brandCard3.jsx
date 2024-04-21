@@ -1,8 +1,14 @@
 import React from "react";
 
-export default function BrandCard3({ icon, brandName, imgUrl1 }) {
+export default function BrandCard3({
+  icon,
+  brandName,
+  imgUrl1,
+  imgUrl2,
+  imgUrl3,
+}) {
   return (
-    <div className="w-[288px] border p-4 flex flex-col gap-4 h-[314px]">
+    <div className="w-[288px] border p-4 bg-slate-100 flex flex-col gap-4 h-[314px]">
       <div className="w-full flex gap-2 h-[80px]">
         <div className="w-[80px] h-[80px]">
           <div className="flex flex-col justify-center items-center p-0 md:p-2 gap-2 h-full w-full rounded-full bg-slate-300">
@@ -51,14 +57,14 @@ export default function BrandCard3({ icon, brandName, imgUrl1 }) {
           <div className="w-[124px] h-[89px]">
             <img
               className="w-[124px] h-[89px] object-cover"
-              src={imgUrl1}
+              src={imgUrl2}
               alt="img2"
             />
           </div>
           <div className="w-[124px] h-[89px]">
             <img
               className="w-[124px] h-[89px] object-cover"
-              src={imgUrl1}
+              src={imgUrl3}
               alt="img2"
             />
           </div>
