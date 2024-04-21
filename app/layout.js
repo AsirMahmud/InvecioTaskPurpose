@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {" "}
-        <div className="w-full ">
+        <div className="w-full scroll-smooth ">
           <TopBar></TopBar>
           <NavBar></NavBar>
           <ScrollAreaHorizontalDemo></ScrollAreaHorizontalDemo>
