@@ -10,7 +10,7 @@ export default function BrandCard2({ icon, brandName }) {
               <img
                 src={icon}
                 alt="Brand Icon"
-                className="object-cover w-10 h-10 md:w-16 md:h-16 rounded-full"
+                className="object-contain w-10 h-10 md:w-16 md:h-16 rounded-full"
               />
             </div>
           </div>

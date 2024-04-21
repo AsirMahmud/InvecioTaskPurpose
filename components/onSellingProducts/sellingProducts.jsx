@@ -1,10 +1,12 @@
 import React from "react";
 import Header from "../ui/header";
+import SellingProductCard from "./sellingProductCard";
 
-export default function sellingProducts() {
+export default function SellingProducts() {
   return (
-    <div className="p-6 flex flex-col">
+    <div className=" flex flex-col gap-4">
       <Header header="On selling products"></Header>
+      <SellingProductCard></SellingProductCard>
     </div>
   );
 }

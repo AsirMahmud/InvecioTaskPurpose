@@ -1,7 +1,13 @@
+import AppleProduct from "@/components/apple/appleProduct";
 import Deal from "@/components/dealOfTheDay/deal";
 import Product from "@/components/department/product";
 import Feature from "@/components/feature/feature";
+import MostViewed from "@/components/mostViewedItem/mostViewed";
+import Viewed from "@/components/mostViewedItem/viewed";
 import Offer from "@/components/offer/offer";
+import SellingProducts from "@/components/onSellingProducts/sellingProducts";
+import ShopCategories from "@/components/shopAllCategories/shopCategories";
+import TopBrand from "@/components/topBrand/topBrand";
 import BestDeals from "@/components/ui/bestDeals";
 import BrandCard from "@/components/ui/brandCard";
 import BrandCard2 from "@/components/ui/brandCard2";
@@ -22,7 +28,11 @@ export default function Home() {
       <Product></Product>
       <Deal></Deal>
       <Offer></Offer>
-      <
+      <SellingProducts></SellingProducts>
+      <AppleProduct></AppleProduct>
+      <ShopCategories></ShopCategories>
+      <Viewed></Viewed>
+      <TopBrand></TopBrand>
     </div>
   );
 }

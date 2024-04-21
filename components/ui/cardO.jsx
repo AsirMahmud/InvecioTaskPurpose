@@ -2,7 +2,7 @@ import { Star, StarOff } from "lucide-react";
 
 export default function Card({ imageUrl, categoryName }) {
   return (
-    <div className="w-[236px] h-[353px] gap- border">
+    <div className="w-[236px] h-[353px] gap- border bg-white">
       <div className="mb-2 ">
         <img
           src={imageUrl}
