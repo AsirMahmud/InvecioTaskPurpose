@@ -47,8 +47,9 @@ export default function IconSlider() {
   ];
 
   return (
-    <Carousel className="lg:max-w-[90%] max-w-sm">
+    <Carousel className="lg:w-[500px]  w-[250px]">
       <CarouselContent className="-ml-1">
+        ]
         {companyIcons.map((i, index) => (
           <CarouselItem
             key={index}
@@ -60,8 +61,8 @@ export default function IconSlider() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="hidden md:block" />
+      <CarouselNext className="hidden md:block" />
     </Carousel>
   );
 }

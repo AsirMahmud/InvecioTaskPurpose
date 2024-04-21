@@ -18,24 +18,24 @@ export default function HeroSlider() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-[90%] p-2 "
+      className="md:w-full w-[70%] p-2 "
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index}>
-            <div className="w-full h-full">
+          <CarouselItem className="flex justify-center" key={index}>
+            <div className="md:w-full w-full flex h-full items-center ">
               <img
-                className="w-full h-full object-cover"
+                className="md:w-full w-full h-full object-cover"
                 src="https://marketplace.canva.com/EAFED0hv9G0/1/0/1600w/canva-blue-pink-modern-special-offer-sale-banner-J5VkNReQ8WA.jpg"
               ></img>
             </div>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="md:block hidden" />
+      <CarouselNext className="md:block hidden" />
     </Carousel>
   );
 }
