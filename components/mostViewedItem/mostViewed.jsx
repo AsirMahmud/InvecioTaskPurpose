@@ -112,18 +112,18 @@ export default function MostViewSlider() {
 
   return (
     <Carousel className="w-full ">
-      <CarouselContent className="-ml-1">
+      <CarouselContent className="-ml-1 flex gap-1">
         {products.map((i, index) => (
           <CarouselItem
             key={index}
-            className="pl-2 basis-3/4 md:basis-1/3 lg:basis-1/4"
+            className="pl-1 flex gap-4 basis-3/4 md:basis-1/3 lg:basis-1/4"
           >
             <Card imageUrl={i.image} categoryName={i.name}></Card>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className=" md:block hidden" />
+      <CarouselNext className=" md:block hidden" />
     </Carousel>
   );
 }
