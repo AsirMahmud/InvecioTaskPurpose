@@ -22,7 +22,7 @@ export default function RightSidebar() {
           </span>
         </p>
       </div>
-      <div className="w-[318px]  h-[257px] ">
+      <div className="w-full  h-[257px] ">
         <img
           className="w-full h-full object-cover "
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvRb3nc-QLhFA6tDRboq9PrNwOJBnAwktg0W953_7MAA&s"
