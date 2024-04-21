@@ -57,9 +57,9 @@ export default function Product() {
   ];
 
   return (
-    <div className="flex flex-col gap-4 ">
+    <div className="flex flex-col  ">
       <Header header="Shop by Department"></Header>
-      <div className="grid lg:grid-cols-5 place-items-center md:grid-cols-3 grid-cols-2  gap-4">
+      <div className="grid lg:grid-cols-5 place-items-center md:grid-cols-3 grid-cols-2">
         {productData.map((i) => (
           <BestDeals
             key={i.name}

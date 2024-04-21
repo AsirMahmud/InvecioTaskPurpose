@@ -6,11 +6,11 @@ import RightSidebar from "./rightSidebar";
 
 export default function Hero() {
   return (
-    <div className="w-full flex md:h-[600px] border bg-white  gap-2">
+    <div className=" flex md:h-[600px] border bg-white  gap-2">
       <div className="w-[20%] border h-full hidden lg:block p-4">
         <Category></Category>
       </div>
-      <div className="w-full   flex flex-col gap-4 justify-center pt-4 ">
+      <div className="md:w-[700px]   flex flex-col gap-8 justify-center pt-4 ">
         <div className="w-full md:h-[426px]   flex justify-center">
           <HeroSlider></HeroSlider>
         </div>
