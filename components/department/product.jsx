@@ -47,7 +47,7 @@ export default function Product() {
   ];
 
   return (
-    <div className="flex flex-col md:gap-4   ">
+    <div className="flex flex-col md:gap-4 gap-4  ">
       <Header header="Shop by Department"></Header>
       <div className="grid lg:grid-cols-4 place-items-center md:grid-cols-3 gap-y-4 grid-cols-2">
         {productData.map((i) => (

@@ -32,8 +32,8 @@ export default function TopBar() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className=" md:block hidden" />
+        <CarouselNext className=" md:block hidden" />
       </Carousel>
     </div>
   );
